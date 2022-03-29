@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/25bd6e89c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <input type="text" id="city-input" placeholder="Enter a city here"
+          autocomplet ="off" autofocus"on" class="form-control shadown-sm" />
+          <input class="button" type="submit" value="Search" />
+          </form>
+          <div class="col-1">
+            <button
+              class="form-control btn btn-secondary p-0 h-100"
+              id="current-button"
+              type="button"
+            >
+              Current
+            </button>
+        <h1>
+          <div id="current-weather">
+            Garissa, Kenya
+          </div>
+          <i class="fa-solid fa-cloud-sun sunny-icon"></i>
+          <span class="temperature" id="temperature">25</span>
+          <span class="units">
+            <a href="#" id="celsius-link">°C</a> /
+            <a href="#" id="fahrenheit-link">°F</a>
+          </span>
+        </h1>
+        <h2>
+          March 6th/22
+          <br />
+          Sunday, 5: 00AM
+          <br />
+          Partly cloudy
+        </h2>
+        <p class="weatherinfo">
+          Humidity <span id="humidity">71</span>% <br />
+          Wind: <span id="windspeed">26</span>km/h
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              Monday
+              <br />
+              <i class="fa-solid fa-sun sun-icon"></i>
+              <div class="garissa-temp">38°C</div>
+            </div>
+            <div class="col">
+              Tuesday
+              <br />
+              <i class="fa-solid fa-cloud cloud-icon"></i>
+              <div class="garissa-temp">38°C</div>
+            </div>
+            <div class="col">
+              Wednesday
+              <br />
+              <i class="fa-solid fa-cloud-sun sunny-icon"></i>
+
+              <div class="garissa-temp">23°C</div>
+            </div>
+            <div class="col">
+              Thursday
+              <br />
+
+              <i class="fa-solid fa-cloud-sun sunny-icon"></i>
+              <div class="garissa-temp">23°C</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
